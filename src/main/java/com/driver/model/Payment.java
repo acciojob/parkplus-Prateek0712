@@ -33,6 +33,13 @@ public class Payment {
     public void setId(Integer id) {
         this.id = id;
     }
+    public boolean isPaymentCompleted() {
+        return paymentCompleted;
+    }
+
+    public void setPaymentCompleted(boolean paymentCompleted) {
+        this.paymentCompleted = paymentCompleted;
+    }
 
     public Boolean getPaymentCompleted() {
         return paymentCompleted;
