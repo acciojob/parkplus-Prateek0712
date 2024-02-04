@@ -61,8 +61,9 @@ public class ReservationServiceImpl implements ReservationService {
         reservedSpot.getReservationList().add(reservation);
         reservedSpot.setOccupied(true);
         //reservation=reservationRepository3.save(reservation);
-        //userRepository3.save(user);
+        userRepository3.save(user);
         spotRepository3.save(reservedSpot);
+        //unka yahi chhiye tha ke  hum ye  dono save kare pata nhi kyu
         return reservation;
     }
 }
